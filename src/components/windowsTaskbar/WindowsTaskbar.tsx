@@ -49,7 +49,7 @@ const WindowsTaskBar: React.FC<windowsTaskBarProps> = ({ onToggleMenu, buttonRef
                 }}
             >
                 <Image
-                    src="/windows-icons/windows_xp_icon.png"
+                    src={`${import.meta.env.BASE_URL}/windows-icons/windows_xp_icon.png`}
                     alt=""
                     height={30}
                     width={30}
@@ -61,21 +61,21 @@ const WindowsTaskBar: React.FC<windowsTaskBarProps> = ({ onToggleMenu, buttonRef
             <TimeTaskBar>
                 <ImageContainer>
                     <Image
-                        src="/windows-icons/Security - Ok.png"
+                        src={`${import.meta.env.BASE_URL}/windows-icons/Security - Ok.png`}
                         alt=""
                         height={25}
                         width={25}
                         style={{ marginRight: "7px" }}
                     />
                     <Image
-                        src="windows-icons/Network and Internet.png"
+                        src={`${import.meta.env.BASE_URL}windows-icons/Network and Internet.png`}
                         alt=""
                         height={25}
                         width={25}
                         style={{ marginRight: "7px" }}
                     />
                     <Image
-                        src="/windows-icons/Volume.png"
+                        src={`${import.meta.env.BASE_URL}/windows-icons/Volume.png`}
                         alt=""
                         height={25}
                         width={25}
@@ -84,7 +84,7 @@ const WindowsTaskBar: React.FC<windowsTaskBarProps> = ({ onToggleMenu, buttonRef
                 </ImageContainer>
                 <MobileArrowButton onClick={() => setIsArrowMenuOpen(!isArrowMenuOpen)}>
                     <Image
-                        src="/windows-icons/arrow_left_icon.png"
+                        src={`${import.meta.env.BASE_URL}/windows-icons/arrow_left_icon.png`}
                         alt=""
                         height={18}
                         width={18}
@@ -93,21 +93,21 @@ const WindowsTaskBar: React.FC<windowsTaskBarProps> = ({ onToggleMenu, buttonRef
                 {isArrowMenuOpen && (
                     <MobileImageArrowContainer>
                         <Image
-                            src="/windows-icons/Security - Ok.png"
+                            src={`${import.meta.env.BASE_URL}/windows-icons/Security - Ok.png`}
                             alt=""
                             height={25}
                             width={25}
                             style={{ marginRight: "7px" }}
                         />
                         <Image
-                            src="/windows-icons/Network and Internet.png"
+                            src={`${import.meta.env.BASE_URL}/windows-icons/Network and Internet.png`}
                             alt=""
                             height={25}
                             width={25}
                             style={{ marginRight: "7px" }}
                         />
                         <Image
-                            src="/windows-icons/Volume.png"
+                            src={`${import.meta.env.BASE_URL}/windows-icons/Volume.png`}
                             alt=""
                             height={25}
                             width={25}

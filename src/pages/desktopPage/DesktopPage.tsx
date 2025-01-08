@@ -38,7 +38,7 @@ const DesktopPage: React.FC = () => {
     return (
         <>
             <DesktopWrapper>
-            <StyledBackgroundImage src="/windows_background_1920x1080.jpg" />
+            <StyledBackgroundImage src={`${import.meta.env.BASE_URL}windows_background_1920x1080.jpg`} />
             <WindowsTaskBar onToggleMenu={toggleMenu} buttonRef={buttonRef} />
             {isMenuOpen && <WindowsMenu ref={menuRef} />}
             </DesktopWrapper>

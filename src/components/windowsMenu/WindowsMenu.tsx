@@ -7,7 +7,7 @@ const WindowsMenu = forwardRef<HTMLDivElement>((_, ref) => {
         <WindowsMenuContainer ref={ref}>
             <UserInfoContainer>
                 <Image
-                    src="/kon image.jpg"
+                    src={`${import.meta.env.BASE_URL}/kon image.jpg`}
                     alt=""
                     height={40}
                     width={40}
